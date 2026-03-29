@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Quantity</title>
+  </head>
+  <body>
+    <h1>Cart Quantity</h1>
+    <button
+      onclick="
+        // display 'Cart quantity: ' on the console then the variable cartQuantity
+        console.log(`Card quantity: ${cardQuantity}`)
+      "
+    >
+      Show Quantity
+    </button>
+    <button
+      onclick="
+        // increase card quantity by 1
+        cardQuantity++;
+        // display the updated value of cardQuantity
+        console.log(`Card quantity: ${cardQuantity}`);
+      "
+    >
+      Add to Cart
+    </button>
+    <button
+      onclick="
+        // increase the value of cartQuantity by 2
+        cardQuantity += 2;
+        // display the updated value of cartQuantity
+        console.log(`Card quantity: ${cardQuantity}`);
+      "
+    >
+      +2
+    </button>
+    <button
+      onclick="
+        // increase the value of cartQuantity by 3 using the shortcut
+        cardQuantity += 3;
+        // display the updated value of cartQuantity
+        console.log(`Card quantity: ${cardQuantity}`);
+      "
+    >
+      +3
+    </button>
+    <button
+      onclick="
+        // reset the value of cartQuantity
+        cardQuantity = 0;
+        // display 'Cart was reset.'
+        console.log('Cart was reset.');
+        // display the updated value of cardQuantity
+        console.log(`Card quantity: ${cardQuantity}`);
+      "
+    >
+      Reset Cart
+    </button>
+
+    <script>
+      // create a variable cartQuantity and assign 0 as the initial value
+      let cardQuantity = 0;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Quantity</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Cart Quantity</h1>
+    <button
+      onclick="
+        // display 'Cart quantity: ' on the console then the variable cartQuantity
+        console.log(`Cart quantity: ${cartQuantity}`)
+      "
+    >
+      Show Quantity
+    </button>
+    <button
+      onclick="
+        // increase card quantity by 1
+        cartQuantity++;
+        // display the updated value of cardQuantity
+        console.log(`Cart quantity: ${cartQuantity}`);
+      "
+    >
+      Add to Cart
+    </button>
+    <button
+      onclick="
+        // increase the value of cartQuantity by 2
+        cartQuantity = cartQuantity + 2;
+        // display the updated value of cartQuantity
+        console.log(`Cart quantity: ${cartQuantity}`);
+      "
+    >
+      +2
+    </button>
+    <button
+      onclick="
+        // increase the value of cartQuantity by 3 using the shortcut
+        cartQuantity += 3;
+        // display the updated value of cartQuantity
+        console.log(`Cart quantity: ${cartQuantity}`);
+      "
+    >
+      +3
+    </button>
+    <button
+      onclick="
+        // reset the value of cartQuantity
+        cartQuantity = 0;
+        // display 'Cart was reset.'
+        console.log('Cart was reset.');
+        // display the updated value of cardQuantity
+        console.log(`Cart quantity: ${cartQuantity}`);
+      "
+    >
+      Reset Cart
+    </button>
+
+    <script>
+      // create a variable cartQuantity and assign 0 as the initial value
+      let cartQuantity = 0;
+    </script>
+  </body>
+</html>
